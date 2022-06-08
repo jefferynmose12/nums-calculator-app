@@ -1,6 +1,7 @@
 {
   "name": "nums-calculator-app",
   "version": "0.1.0",
+  "homepage": "https://jefferynmose12.github.io/nums-calculator-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -10,6 +11,7 @@
     "@types/node": "^16.11.38",
     "@types/react": "^18.0.11",
     "@types/react-dom": "^18.0.5",
+    "mathjs": "^10.6.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
@@ -17,6 +19,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
